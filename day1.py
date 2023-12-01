@@ -1,7 +1,7 @@
 import re
 
-with open("data/day1.txt") as f:
-    data = f.read().strip()
+with open("data/day1.txt") as file:
+    data = file.read().strip()
 
 
 def calibration(data):
