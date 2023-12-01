@@ -5,9 +5,9 @@ with open("data/day1.txt") as f:
 
 
 def calibration(data):
-    ls = data.split("\n")
-    ns = [re.findall("\d", x) for x in ls]
-    return sum(int(n[0] + n[-1]) for n in ns)
+    lines = data.split("\n")
+    numbers = [re.findall("\d", line) for line in lines]
+    return sum(int(number[0] + number[-1]) for number in numbers)
 
 
 # Part 1
@@ -25,4 +25,5 @@ data = (
     .replace("eight", "eight8eight")
     .replace("nine", "nine9nine")
 )
-print(calibration(data))
+
+print("deel 2:" + str(calibration(data)))
