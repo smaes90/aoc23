@@ -61,10 +61,10 @@ for key, game_results in games_played.items():
     if red_check and green_check and blue_check:
         solution_part1.append(int(key))
 
-print("Part 1 solution:", sum(solution_part1))
+print("Deel 1: ", sum(solution_part1))
 
 for key, item in game_sets.items():
     cube_power = max(item['red']) * max(item['green']) * max(item['blue'])
     solution_part2.append(cube_power)
 
-print("Part 2 solution:", sum(solution_part2))
+print("Deel 2: ", sum(solution_part2))
